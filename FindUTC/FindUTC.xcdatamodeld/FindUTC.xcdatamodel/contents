@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Api" syncable="YES">
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Opinion" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idOpinion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="noteName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Store" syncable="YES">
+        <attribute name="adress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hours" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idStore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nbOpinions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StoreCategory" syncable="YES">
+        <attribute name="idCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameCategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nameCategoryPlural" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nbStores" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Api" positionX="-63" positionY="63" width="128" height="60"/>
+        <element name="Opinion" positionX="-63" positionY="63" width="128" height="105"/>
+        <element name="Store" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="StoreCategory" positionX="-63" positionY="63" width="128" height="105"/>
+    </elements>
+</model>

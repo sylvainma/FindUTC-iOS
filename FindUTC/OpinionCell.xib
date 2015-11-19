@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="OpinionCell" id="KGk-i7-Jjw" customClass="OpinionCell">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Très bien" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVt-qB-qZJ">
+                        <rect key="frame" x="8" y="8" width="424" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="03/05/15" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQp-Xf-Zkv">
+                        <rect key="frame" x="8" y="28" width="424" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFW-5m-f3C">
+                        <rect key="frame" x="8" y="52" width="424" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="18" id="oeO-kE-g1R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oeO-kE-g1R"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oQp-Xf-Zkv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5M7-cH-CnW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dFW-5m-f3C" secondAttribute="bottom" constant="11" id="5h2-pR-zDr"/>
+                    <constraint firstItem="oQp-Xf-Zkv" firstAttribute="top" secondItem="ZVt-qB-qZJ" secondAttribute="bottom" constant="2" id="9Hi-Rh-z2V"/>
+                    <constraint firstItem="ZVt-qB-qZJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Hlf-Ed-5jo"/>
+                    <constraint firstItem="dFW-5m-f3C" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="IEv-mz-pRh"/>
+                    <constraint firstItem="dFW-5m-f3C" firstAttribute="top" secondItem="oQp-Xf-Zkv" secondAttribute="bottom" constant="8" id="LMJ-g8-9FY"/>
+                    <constraint firstItem="dFW-5m-f3C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="NP1-QU-CZT"/>
+                    <constraint firstItem="oQp-Xf-Zkv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Pw3-qL-hKW"/>
+                    <constraint firstItem="oQp-Xf-Zkv" firstAttribute="top" secondItem="ZVt-qB-qZJ" secondAttribute="bottom" constant="2" id="b4w-np-8D2"/>
+                    <constraint firstItem="ZVt-qB-qZJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="cQd-nI-pHJ"/>
+                    <constraint firstItem="ZVt-qB-qZJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="nqs-Bd-4sX"/>
+                    <constraint firstItem="dFW-5m-f3C" firstAttribute="top" secondItem="oQp-Xf-Zkv" secondAttribute="bottom" constant="8" id="qtQ-hu-VQt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="opinionDate" destination="oQp-Xf-Zkv" id="ozQ-fg-K7B"/>
+                <outlet property="opinionMessage" destination="dFW-5m-f3C" id="9Xt-zH-sjn"/>
+                <outlet property="opinionRate" destination="ZVt-qB-qZJ" id="qV1-QF-DiB"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="384"/>
+        </tableViewCell>
+    </objects>
+</document>

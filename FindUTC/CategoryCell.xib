@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CategoryCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="80" id="loA-wS-abN" customClass="CategoryCell">
+            <rect key="frame" x="0.0" y="0.0" width="518" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="loA-wS-abN" id="Gtd-qP-80Z">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurants (18)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDM-Ta-khI">
+                        <rect key="frame" x="83" y="8" width="394" height="63"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CategoryRestaurant" translatesAutoresizingMaskIntoConstraints="NO" id="JKn-gr-Aad">
+                        <rect key="frame" x="8" y="8" width="60" height="63"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="rwu-4a-3rC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="BDM-Ta-khI" firstAttribute="top" secondItem="Gtd-qP-80Z" secondAttribute="topMargin" id="Ftc-J6-grz"/>
+                    <constraint firstItem="BDM-Ta-khI" firstAttribute="trailing" secondItem="Gtd-qP-80Z" secondAttribute="trailingMargin" id="NEU-gT-4Oe"/>
+                    <constraint firstItem="JKn-gr-Aad" firstAttribute="top" secondItem="Gtd-qP-80Z" secondAttribute="topMargin" id="RJA-z1-RhX"/>
+                    <constraint firstItem="BDM-Ta-khI" firstAttribute="trailing" secondItem="Gtd-qP-80Z" secondAttribute="trailingMargin" id="Rbe-xW-QeY"/>
+                    <constraint firstItem="JKn-gr-Aad" firstAttribute="bottom" secondItem="Gtd-qP-80Z" secondAttribute="bottomMargin" id="Zyk-eT-V3m"/>
+                    <constraint firstItem="JKn-gr-Aad" firstAttribute="leading" secondItem="Gtd-qP-80Z" secondAttribute="leadingMargin" id="kg3-wW-vD9"/>
+                    <constraint firstItem="BDM-Ta-khI" firstAttribute="leading" secondItem="JKn-gr-Aad" secondAttribute="trailing" constant="15" id="wIe-jd-6LW"/>
+                    <constraint firstItem="BDM-Ta-khI" firstAttribute="bottom" secondItem="Gtd-qP-80Z" secondAttribute="bottomMargin" id="wwj-VS-O5I"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Rbe-xW-QeY"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logo" destination="JKn-gr-Aad" id="aAx-Al-dQA"/>
+                <outlet property="name" destination="BDM-Ta-khI" id="uxg-Eo-Tv0"/>
+            </connections>
+            <point key="canvasLocation" x="327" y="251"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CategoryRestaurant" width="128" height="128"/>
+    </resources>
+</document>

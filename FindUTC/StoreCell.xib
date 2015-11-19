@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="StoreCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StoreCell" rowHeight="60" id="KGk-i7-Jjw" customClass="StoreCell">
+            <rect key="frame" x="0.0" y="0.0" width="493" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Au comptoir d'Alice" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbU-kl-oit">
+                        <rect key="frame" x="8" y="8" width="452" height="63"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(16 avis)" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Q-Vl-Hcj">
+                        <rect key="frame" x="410" y="8" width="50" height="63"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a1Q-Vl-Hcj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Hp5-49-uHm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="RbU-kl-oit" secondAttribute="trailing" constant="-8" id="KoF-2H-jbH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a1Q-Vl-Hcj" secondAttribute="trailing" constant="-8" id="Oy9-RQ-JUb"/>
+                    <constraint firstItem="RbU-kl-oit" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Pay-3E-3kF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="a1Q-Vl-Hcj" secondAttribute="bottom" id="Uuo-jA-yAi"/>
+                    <constraint firstItem="RbU-kl-oit" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kXR-62-omI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="RbU-kl-oit" secondAttribute="bottom" id="mci-GM-ErM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="name" destination="RbU-kl-oit" id="EzR-15-slk"/>
+                <outlet property="nbOpinions" destination="a1Q-Vl-Hcj" id="o4v-pg-ka3"/>
+            </connections>
+            <point key="canvasLocation" x="432.5" y="352"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="StoreTitleCell">
+            <rect key="frame" x="0.0" y="0.0" width="486" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le Solférino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uM-Tm-TxM">
+                        <rect key="frame" x="8" y="8" width="470" height="27"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4R9-Tn-5N2">
+                        <rect key="frame" x="8" y="40" width="470" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Très bien (16 avis)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POz-rx-1K3">
+                        <rect key="frame" x="8" y="62" width="470" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.29803921568627451" green="0.61568627450980395" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="8uM-Tm-TxM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="63Q-2e-rFP"/>
+                    <constraint firstItem="4R9-Tn-5N2" firstAttribute="top" secondItem="8uM-Tm-TxM" secondAttribute="bottom" constant="5" id="7np-CQ-ZvF"/>
+                    <constraint firstItem="4R9-Tn-5N2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9XQ-1G-bk3"/>
+                    <constraint firstItem="POz-rx-1K3" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="9Zv-89-pe4"/>
+                    <constraint firstItem="4R9-Tn-5N2" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="LYD-O3-ZNn"/>
+                    <constraint firstItem="8uM-Tm-TxM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Q6n-d1-JfP"/>
+                    <constraint firstItem="8uM-Tm-TxM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ZXJ-NL-AUG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="POz-rx-1K3" secondAttribute="bottom" constant="1" id="cA4-k5-ViN"/>
+                    <constraint firstItem="POz-rx-1K3" firstAttribute="top" secondItem="4R9-Tn-5N2" secondAttribute="bottom" constant="5" id="ijH-lX-OCB"/>
+                    <constraint firstItem="POz-rx-1K3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="56" id="qhO-nx-WVq"/>
+                    <constraint firstItem="POz-rx-1K3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yqZ-cj-QE8"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="qhO-nx-WVq"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.29803921568627451" green="0.61568627450980395" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="storeCategory" destination="4R9-Tn-5N2" id="2FM-uC-9KH"/>
+                <outlet property="storeName" destination="8uM-Tm-TxM" id="zLW-h8-g4A"/>
+                <outlet property="storeRate" destination="POz-rx-1K3" id="GkI-KU-RDV"/>
+            </connections>
+            <point key="canvasLocation" x="508" y="381.5"/>
+        </tableViewCell>
+    </objects>
+</document>

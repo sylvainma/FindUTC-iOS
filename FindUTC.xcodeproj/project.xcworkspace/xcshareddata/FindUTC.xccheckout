@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>19F24FAB-3999-4D6C-A537-2980A76F6D68</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FindUTC</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1AA1107D33D4D650764E26B82DB10B0DAB372719</key>
+		<string>https://github.com/sylvainma/FindUTC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FindUTC.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1AA1107D33D4D650764E26B82DB10B0DAB372719</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sylvainma/FindUTC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1AA1107D33D4D650764E26B82DB10B0DAB372719</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1AA1107D33D4D650764E26B82DB10B0DAB372719</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FindUTC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
